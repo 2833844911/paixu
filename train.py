@@ -172,7 +172,7 @@ class Model(nn.Module):
 
 if __name__ == '__main__':
     batchsize = 20
-    qidqyxx = 1 #开启迁移学习
+    qidqyxx = 0 #开启迁移学习
 
     dataLoad = classInfo(20)
 
