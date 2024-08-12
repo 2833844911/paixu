@@ -96,7 +96,7 @@ class Model(nn.Module):
         return output2[:, 1:]
 
 dymodel = Model()
-dymodel.load_state_dict(torch.load("./model_epoch.pth"))
+dymodel.load_state_dict(torch.load("./model_epoch.pth",map_location=device))
 dymodel.to(device)
 dymodel.eval()
 def getinfo(text):
